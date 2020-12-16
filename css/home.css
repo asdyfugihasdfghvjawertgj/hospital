@@ -1,0 +1,501 @@
+body{
+
+  font-family: 'ZCOOL XiaoWei', serif;
+
+}
+#inlineForm{
+  color:white;
+}
+
+.socialbar .fb,.twitter,.integram{
+  font-size: 30px;
+}
+.socialbar .mail{
+  font-size: 22px;
+}
+
+.socialbar .phone{
+  font-size: 20px;
+}
+@media screen and (max-width: 992px){
+  .socialbar{
+      display: none;
+  }
+}
+.bar{
+  height: 60px;
+}
+
+.stroke, #inlineForm{
+  background-color:  rgb(32, 88, 105);
+  text-align: center;
+}
+
+#navbar ul li a{
+color: #fff;
+}
+
+.btn{
+    border-left: 0;
+    
+}
+.banner .bannerimg{
+  background-image: url("../image/banner.jpg");
+  background-repeat: no-repeat; 
+  height:290px;
+}
+
+
+nav {
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px 0;
+    
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #fff;
+  }
+  
+  
+  /* stroke */
+  nav.stroke ul li a,
+  nav.fill ul li a {
+    position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background:white;
+    height: 3px;
+  }
+  nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+  
+  nav.fill ul li a {
+    transition: all 2s;
+  }
+  
+  nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  nav.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
+  form .search{
+      cursor: pointer;
+  }
+  .image{
+    border: 1px solid blue;
+    height:250px;
+    
+  }
+  
+  .col1{
+    height: 250px;
+    
+
+  }
+
+#blocks-wrapper .block{height: 115px;text-align:center;color:#fff;
+  cursor: pointer;
+  
+}
+#blocks-wrapper .block i{color:#ccc;font-size:50px;margin-top: 10px;cursor: pointer;}
+#blocks-wrapper .block h3{font-weight:500;cursor: pointer;}
+#blocks-wrapper .block a{
+  text-decoration: none;
+}
+
+#one,#four{
+  background-color: rgb(32, 88, 105);
+  
+    }
+    #two{
+  background-color: rgb(179, 179, 216);
+    }
+    #three{
+      background-color: rgb(179, 179, 216); 
+    }
+  
+          #one,#two,#three,#four{
+              position: relative;
+              display: inline-block;
+              padding:15px 30px;
+              color: #2136f3;
+              text-transform: uppercase;
+              letter-spacing: 4px;
+              text-decoration: none;
+              font-size: 16px;
+              overflow: hidden;
+              transition: 0.2s ;
+             
+          }
+         #one:hover{
+              color:deeppink;
+              background: #2196f3;
+              box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 40px #2196f3;
+              transition-delay: 1s;
+          } 
+          #one  span{
+              position:absolute;
+              display: block;
+  
+          }
+          #one #four span:nth-child(1){
+              top: 0;
+              left: -100%;
+              width: 100%;
+              height: 5px;
+              background:linear-gradient(90deg,transparent,deeppink);
+  
+          }
+          #one:hover span:nth-child(1){
+              left: 100%;
+              transition:1s ;
+          }
+  
+          #one span:nth-child(3){
+              bottom: 0;
+              right: -100%;
+              width: 100%;
+              height: 5px;
+              background:linear-gradient(270deg,transparent,deeppink);
+  
+          }
+          #one:hover span:nth-child(3){
+              right:  100%;
+              transition:1s ;
+              transition-delay: 0.5s;
+          }
+  
+          #one span:nth-child(2){
+              top: -100%;
+              right: 0;
+              width: 5px;
+              height: 100%;
+              background:linear-gradient(180deg,transparent,deeppink);
+  
+          }
+          #one:hover span:nth-child(2){
+              top:  100%;
+              transition:1s ;
+              transition-delay: 0.25s;
+          }
+  
+          #one span:nth-child(4){
+              top: 100%;
+              left: 0;
+              width: 5px;
+              height: 100%;
+              background:linear-gradient(360deg,transparent,deeppink);
+  
+          }
+         #one:hover span:nth-child(4){
+              top:  -100%;
+              transition:1s ;
+              transition-delay: 0.75s;
+          }
+          /* two */
+          #two:hover{
+            color:deeppink;
+            background: #2196f3;
+            box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 40px #2196f3;
+            transition-delay: 1s;
+        } 
+        #two  span{
+            position:absolute;
+            display: block;
+
+        }
+        #two span:nth-child(1){
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 5px;
+            background:linear-gradient(90deg,transparent,deeppink);
+
+        }
+        #two:hover span:nth-child(1){
+            left: 100%;
+            transition:1s ;
+        }
+
+        #two span:nth-child(3){
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 5px;
+            background:linear-gradient(270deg,transparent,deeppink);
+
+        }
+        #two:hover span:nth-child(3){
+            right:  100%;
+            transition:1s ;
+            transition-delay: 0.5s;
+        }
+        #two span:nth-child(2){
+            top: -100%;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background:linear-gradient(180deg,transparent,deeppink);
+
+        }
+        #two:hover span:nth-child(2){
+            top:  100%;
+            transition:1s ;
+            transition-delay: 0.25s;
+        }
+
+        #two span:nth-child(4){
+            top: 100%;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background:linear-gradient(360deg,transparent,deeppink);
+
+        }
+       #two:hover span:nth-child(4){
+            top:  -100%;
+            transition:1s ;
+            transition-delay: 0.75s;
+        }
+        /* three */
+        #three:hover{
+          color:deeppink;
+          background: #2196f3;
+          box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 40px #2196f3;
+          transition-delay: 1s;
+      } 
+      #three  span{
+          position:absolute;
+          display: block;
+
+      }
+      #three  span:nth-child(1){
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 5px;
+          background:linear-gradient(90deg,transparent,deeppink);
+
+      }
+      #three:hover span:nth-child(1){
+          left: 100%;
+          transition:1s ;
+      }
+
+      #three span:nth-child(3){
+          bottom: 0;
+          right: -100%;
+          width: 100%;
+          height: 5px;
+          background:linear-gradient(270deg,transparent,deeppink);
+
+      }
+      #three:hover span:nth-child(3){
+          right:  100%;
+          transition:1s ;
+          transition-delay: 0.5s;
+      }
+
+      #three span:nth-child(2){
+          top: -100%;
+          right: 0;
+          width: 5px;
+          height: 100%;
+          background:linear-gradient(180deg,transparent,deeppink);
+
+      }
+      #three:hover span:nth-child(2){
+          top:  100%;
+          transition:1s ;
+          transition-delay: 0.25s;
+      }
+
+      #three span:nth-child(4){
+          top: 100%;
+          left: 0;
+          width: 5px;
+          height: 100%;
+          background:linear-gradient(360deg,transparent,deeppink);
+
+      }
+      #three:hover span:nth-child(4){
+          top:  -100%;
+          transition:1s ;
+          transition-delay: 0.75s;
+      }
+          /* four */
+  
+          #four:hover{
+              color:deeppink;
+              background: #2196f3;
+              box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 40px #2196f3;
+              transition-delay: 1s;
+          } 
+          #four  span{
+              position:absolute;
+              display: block;
+  
+          }
+          #four  span:nth-child(1){
+              top: 0;
+              left: -100%;
+              width: 100%;
+              height: 5px;
+              background:linear-gradient(90deg,transparent,deeppink);
+  
+          }
+          #four:hover span:nth-child(1){
+              left: 100%;
+              transition:1s ;
+          }
+  
+          #four span:nth-child(3){
+              bottom: 0;
+              right: -100%;
+              width: 100%;
+              height: 5px;
+              background:linear-gradient(270deg,transparent,deeppink);
+  
+          }
+          #four:hover span:nth-child(3){
+              right:  100%;
+              transition:1s ;
+              transition-delay: 0.5s;
+          }
+  
+          #four span:nth-child(2){
+              top: -100%;
+              right: 0;
+              width: 5px;
+              height: 100%;
+              background:linear-gradient(180deg,transparent,deeppink);
+  
+          }
+          #four:hover span:nth-child(2){
+              top:  100%;
+              transition:1s ;
+              transition-delay: 0.25s;
+          }
+  
+          #four span:nth-child(4){
+              top: 100%;
+              left: 0;
+              width: 5px;
+              height: 100%;
+              background:linear-gradient(360deg,transparent,white);
+  
+          }
+         #four:hover span:nth-child(4){
+              top:  -100%;
+              transition:1s ;
+              transition-delay: 0.75s;
+          }
+
+
+.blue1{
+  background:#1C94DA;
+
+}
+#more{
+  display: none;
+}
+#more1{
+  display: none;
+}
+#more2{
+  display: none;
+}
+
+
+
+
+.hospital h2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hospital h2:before,
+.hospital h2:after {
+  content: '';
+  border-top: 2px solid;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+.hospital h2:after {
+  margin: 0 0 0 20px;
+}
+
+
+/* env */
+
+
+.hospital p{
+  text-align:center;
+  margin-top: -10px;
+  font-weight: bold;
+}
+.social h4{
+  text-align: center;
+}
+
+.link h5{
+text-align: center;
+
+}
+.link1 h5{
+  text-align: center;
+  }
+  .link2 h5{
+    text-align: center;
+    }
+    .link1 i,a{
+      font-size: 20px;
+      color: #fff;
+    }
+    .link2 i,a{
+      font-size: 20px;
+      color: #fff;
+    }
+.link i,a{
+  font-size: 20px;
+  color: #fff;
+}

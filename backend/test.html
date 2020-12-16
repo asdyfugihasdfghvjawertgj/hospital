@@ -1,0 +1,98 @@
+<div class="container bg-light mt-5" id="show">
+		
+    <form method="POST" action="">
+    
+        <div class="row pt-3">
+            
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Name<span style="color: red;">*</span></label>
+                    
+                    <input type="text"  name="name"  class="form-control" placeholder="Enter Name" style="width:70%;" value=<?php echo $name; ?>>
+                    
+                    <span style="color: red"><?php echo $inputerror1; ?></span>
+    
+                </div>
+            </div>
+    
+            
+    
+        </div>
+        <div class="row">
+            
+    
+            <div class="col-md-12">
+                
+                <div class="form-group">
+                <label>Email<span style="color: red;">*</span></label>
+                
+                    
+                    <input type="text"  name="email"  class="form-control" placeholder="Enter Email" style="width:70%;" value=<?php echo $email; ?>>
+                    <span style="color: red"><?php echo $inputerror2; ?></span>
+        </div>
+                
+            </div>
+    
+            
+            
+        </div>
+        <div class="row">
+        
+    
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Phone Number<span style="color: red;">*</span></label>
+                    
+                    <input type="text"  name="ph"  class="form-control" placeholder="Enter Phone Number" style="width:70%;" value=<?php echo $phone; ?>>
+                    <span style="color: red"><?php echo $inputerror3; ?></span>
+        
+                </div>
+            </div>
+    
+    
+            
+            
+        </div>
+        <div class="row">
+            
+    
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Password<span style="color: red;">*</span></label>
+                    
+                    <input type="password"  name="psw"  class="form-control" placeholder="Enter Password" style="width:70%;" value=<?php echo $password; ?>>
+                    <span style="color: red"><?php echo $inputerror4; ?></span>
+        
+                </div>
+            </div>
+    
+    
+            
+        </div>
+        <div class="row">
+            
+    
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Confirm-Password<span style="color: red;">*</span></label>
+                    
+                    <input type="password"  name="cpsw"  class="form-control" placeholder="Confirm Password" style="width:70%;" value=<?php echo $confirm; ?>>
+    
+                    <span style="color: red"><?php echo $inputerror5; ?></span>
+        
+                </div>
+            </div>
+    
+            
+        </div>
+        <div style="text-align: center;" class="pt-4 pb-3">
+            <button type="submit" name="bookingreg"  class="btn-outline-dark p-2" style="background-color: rgb(179, 179, 216); text-align: center; border-radius: 5%; width: 100px;">Register
+            </button>
+        </div>
+    </form>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    
+        
+    
